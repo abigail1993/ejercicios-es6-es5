@@ -6,6 +6,7 @@ una palabra en mayúscula.
 **Ya te damos la solución, lo que tienes que hacer es cambiar el código de ES6 a ES5**
 
 ```
-Entrada: 'laboratoria mexico'
-Salida: 'Laboratoria Mexico'
+Entrada: 'este ejercicio pasa a mayusculas la primer letra de cada palabra'
+'
+Salida: 'Este Ejercicio Pasa A Mayusculas La Primer Letra De Cada Palabra'
 ```

@@ -14,7 +14,7 @@ const inventory = [
   { name: "Arándonos", category: "fruit", stock: "19" },
   { name: "Ciruela", category: "fruit", stock: "8" }
 ];
-
+/*
 var totalByCategory = function(inventory, category) {
   var filterCategory = function filterCategory(prod) {
     var totalProd = prod.category === category;
@@ -30,7 +30,14 @@ var totalByCategory = function(inventory, category) {
 };
 
 totalByCategory(inventory, "beverage");
-
+*/
 
 // Comenta todo el código de arriba (ecepto la const inventory) y pasa el código a ES6
 
+let totalByCategory =(inventory, category) => {
+  let filterCategory = prod => prod.category === category;
+   return inventory.filter(filterCategory).reduce(sumTotal, 0);
+};
+let sumTotal = (prodAnterior, prodActual) => prodAnterior + parseInt(prodActual.stock, 10)
+
+console.log(totalByCategory(inventory, "beverage"));
